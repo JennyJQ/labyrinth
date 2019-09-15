@@ -1,0 +1,43 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: Two or more files with the name of NUMBERENTITY.CPP will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are NUMBERENTITY.CPP, Source\Game\Entities\NumberEntity.cpp.
+  AnimationComponent.cpp
+  ParticleEmitterComponent.cpp
+  SpriteRenderComponent.cpp
+  GameEngineMain.cpp
+  AnimationManager.cpp
+  TextureManager.cpp
+  PlayerMovementComponent.cpp
+c:\users\sudhanshu\desktop\ubigame\ubigame\source\game\components\playermovementcomponent.cpp(77): warning C4244: 'argument': conversion from 'float' to 'const int', possible loss of data
+c:\users\sudhanshu\desktop\ubigame\ubigame\source\game\components\playermovementcomponent.cpp(101): warning C4244: 'argument': conversion from 'float' to 'const int', possible loss of data
+c:\users\sudhanshu\desktop\ubigame\ubigame\source\game\components\playermovementcomponent.cpp(125): warning C4244: 'argument': conversion from 'float' to 'const int', possible loss of data
+c:\users\sudhanshu\desktop\ubigame\ubigame\source\game\components\playermovementcomponent.cpp(149): warning C4244: 'argument': conversion from 'float' to 'const int', possible loss of data
+  NumberEntity.cpp
+  ObstacleEntity.cpp
+  GameBoard.cpp
+c:\users\sudhanshu\desktop\ubigame\ubigame\source\game\gameboard.cpp(31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+x64\Release\NumberEntity.obj : warning LNK4042: object specified more than once; extras ignored
+  Generating code
+  2 of 747 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  UbiGame.vcxproj -> C:\Users\Sudhanshu\Desktop\UbiGame\x64\Release\UbiGame.exe
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\1.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\2.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\3.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\4.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\bed.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\bg.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\character-and-dance.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\character-and-extradance.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\character-dance-trans.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\character-dance.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\character-extradance.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\character-resized.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\cobblestone.jpg
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\Obstacle.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\Player.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\portal.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\img\tileset.png
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\snd\glassBreak.wav
+  C:\Users\Sudhanshu\Desktop\UbiGame\UbiGame\Resources\snd\thunder.wav
+  19 File(s) copied
