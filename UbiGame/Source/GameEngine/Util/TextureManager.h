@@ -18,7 +18,10 @@ namespace GameEngine
 			Tile2,
 			Tile3,
 			Tile4,
+			test,
+			Bed,
 			Count,
+			Portal
 		};
 	}	
 
@@ -28,12 +31,14 @@ namespace GameEngine
 		{
 		case eTexture::Player: return "character-and-extradance.png";
 		case eTexture::BG: return "cobblestone.jpg";
-		case eTexture::Obstacle: return "Obstacle.png";
+		case eTexture::test: return "tileset.png";//test
+		case eTexture::Bed: return "bed.png";
+		case eTexture::Obstacle: return "fog.jpg";
 		case eTexture::Tile1: return "1.png";
 		case eTexture::Tile2: return "2.png";
 		case eTexture::Tile3: return "3.png";
 		case eTexture::Tile4: return "4.png";
-		
+		case eTexture::Portal: return "portal.png";
 		}
 
 		return "UnknownTexType";

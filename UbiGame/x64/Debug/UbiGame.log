@@ -1,11 +1,28 @@
-﻿  PlayerSoundComponent.cpp
-  UbiGame.vcxproj -> D:\Projects\HackTheNorth\UbiGame\x64\Debug\UbiGame.exe
-  UbiGame.vcxproj -> D:\Projects\HackTheNorth\UbiGame\x64\Debug\UbiGame.pdb (Partial PDB)
-  D:\Projects\HackTheNorth\UbiGame\UbiGame\Resources\img\bg.png
-  D:\Projects\HackTheNorth\UbiGame\UbiGame\Resources\img\Flappy.png
-  D:\Projects\HackTheNorth\UbiGame\UbiGame\Resources\img\particles.png
-  D:\Projects\HackTheNorth\UbiGame\UbiGame\Resources\img\player.png
-  D:\Projects\HackTheNorth\UbiGame\UbiGame\Resources\img\tileset.png
-  D:\Projects\HackTheNorth\UbiGame\UbiGame\Resources\snd\glassBreak.wav
-  D:\Projects\HackTheNorth\UbiGame\UbiGame\Resources\snd\thunder.wav
-  7 File(s) copied
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(992,5): warning MSB8027: Two or more files with the name of NUMBERENTITY.CPP will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are NUMBERENTITY.CPP, Source\Game\Entities\NumberEntity.cpp.
+  NumberEntity.cpp
+  GameBoard.cpp
+  Generating Code...
+C:\Users\nancy\Downloads\UbiGame\UbiGame\Source\Game\GameBoard.cpp(35,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+x64\Debug\NumberEntity.obj : warning LNK4042: object specified more than once; extras ignored
+  UbiGame.vcxproj -> C:\Users\nancy\Downloads\UbiGame\x64\Debug\UbiGame.exe
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\1.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\2.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\3.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\4.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\bed.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\bg.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\character-and-dance.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\character-and-extradance.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\character-dance-trans.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\character-dance.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\character-extradance.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\character-resized.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\cobblestone.jpg
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\fog.jpg
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\Obstacle.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\Player.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\portal.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\img\tileset.png
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\snd\glassBreak.wav
+  C:\Users\nancy\Downloads\UbiGame\UbiGame\Resources\snd\thunder.wav
+  20 File(s) copied

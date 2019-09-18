@@ -8,8 +8,8 @@ namespace Game
 	class NumberEntity : public GameEngine::Entity
 	{
 	public:
-		NumberEntity(const int num);
-		~NumberEntity();
+		NumberEntity::NumberEntity(const int num);
+		NumberEntity::~NumberEntity();
 
 		virtual void OnAddToWorld() override;
 		virtual void OnRemoveFromWorld() override;

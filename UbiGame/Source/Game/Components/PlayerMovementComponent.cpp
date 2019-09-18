@@ -48,132 +48,142 @@ void PlayerMovementComponent::Update()
 	//player Velocity is applied when we have some input (for the time being let's make it 10pixels a second)
 	//float playerVel = 100.f;
 
-	int maxNumSteps = 50;
-	float pxPerStep = 1;
+	int maxNumSteps = 10;
+	float pxPerStep = 5;
 
 	GameEngine::AnimationComponent* animComponent = GetEntity()->GetComponent<GameEngine::AnimationComponent>();
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && m_numSteps == 0)
-	{
-		m_wasLeftPressed = true;
-	}
-	else
-	{
-		if (m_wasLeftPressed)
-		{
-			if (animComponent)
-			{
-				animComponent->SetIsLooping(true);
-				animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkLeft);
-			}
-			wantedVel.x -= pxPerStep;
-			m_x -= pxPerStep;
-			m_numSteps += 1;
-		}
-		if (m_numSteps == maxNumSteps)
-		{
-			m_wasLeftPressed = false;
-			m_numSteps = 0;
-			m_board->PlayerUpdate(m_x, m_y);
-		}
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-	{
-		m_wasRightPressed = true;
-	}
-	else
-	{
-		if (m_wasRightPressed)
-		{
-			if (animComponent)
-			{
-				animComponent->SetIsLooping(true);
-				animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkRight);
-			}
-			wantedVel.x += pxPerStep;
-			m_x += pxPerStep;
-			m_numSteps += 1;
-		}
-		if (m_numSteps == maxNumSteps)
-		{
-			m_wasRightPressed = false;
-			m_numSteps = 0;
-			m_board->PlayerUpdate(m_x, m_y);
-		}
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-	{
-		m_wasUpPressed = true;
-	}
-	else
-	{
-		if (m_wasUpPressed)
-		{
-			if (animComponent)
-			{
-				animComponent->SetIsLooping(true);
-				animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkUp);
-			}
-			wantedVel.y -= pxPerStep;
-			m_y -= pxPerStep;
-			m_numSteps += 1;
-		}
-		if (m_numSteps == maxNumSteps)
-		{
-			m_wasUpPressed = false;
-			m_numSteps = 0;
-			m_board->PlayerUpdate(m_x, m_y);
-		}
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-	{
-		m_wasDownPressed = true;
-	}
-	else
-	{
-		if (m_wasDownPressed)
-		{
-			if (animComponent)
-			{
-				animComponent->SetIsLooping(true);
-				animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkDown);
-			}
-			wantedVel.y += pxPerStep;
-			m_y += pxPerStep;
-			m_numSteps += 1;
-		}
-		if (m_numSteps == maxNumSteps)
-		{
-			m_wasDownPressed = false;
-			m_numSteps = 0;
-			m_board->PlayerUpdate(m_x, m_y);
-		}
-	}
+	if (m_board->move) {
 
-	
-
-	int maxFaces = 4;
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
-	{
-		m_wasFaceSwapButtonPressed = true;
-	}
-	else
-	{
-		//Button is not pressed now, but it was pressed last frame, which means it just has been released
-		if (m_wasFaceSwapButtonPressed)
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && m_numSteps == 0)
 		{
-			GameEngine::AnimationComponent* animComponent = GetEntity()->GetComponent<GameEngine::AnimationComponent>();
-			if (animComponent)
+			m_wasLeftPressed = true;
+		}
+		else
+		{
+			if (m_wasLeftPressed)
 			{
-				animComponent->SetIsLooping(false);
-				animComponent->PlayAnim(GameEngine::EAnimationId::PlayerDance);
+				if (animComponent)
+				{
+					animComponent->SetIsLooping(true);
+					animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkLeft);
+				}
+				wantedVel.x -= pxPerStep;
+				m_x -= pxPerStep;
+				m_numSteps += 1;
+			}
+			if (m_numSteps == maxNumSteps)
+			{
+				m_wasLeftPressed = false;
+				m_numSteps = 0;
+				m_board->PlayerUpdate(m_x, m_y);
+			}
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+		{
+			m_wasRightPressed = true;
+		}
+		else
+		{
+			if (m_wasRightPressed)
+			{
+				if (animComponent)
+				{
+					animComponent->SetIsLooping(true);
+					animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkRight);
+				}
+				wantedVel.x += pxPerStep;
+				m_x += pxPerStep;
+				m_numSteps += 1;
+			}
+			if (m_numSteps == maxNumSteps)
+			{
+				m_wasRightPressed = false;
+				m_numSteps = 0;
+				m_board->PlayerUpdate(m_x, m_y);
+			}
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+		{
+			m_wasUpPressed = true;
+		}
+		else
+		{
+			if (m_wasUpPressed)
+			{
+				if (animComponent)
+				{
+					animComponent->SetIsLooping(true);
+					animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkUp);
+				}
+				wantedVel.y -= pxPerStep;
+				m_y -= pxPerStep;
+				m_numSteps += 1;
+			}
+			if (m_numSteps == maxNumSteps)
+			{
+				m_wasUpPressed = false;
+				m_numSteps = 0;
+				m_board->PlayerUpdate(m_x, m_y);
+			}
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+		{
+			m_wasDownPressed = true;
+		}
+		else
+		{
+			if (m_wasDownPressed)
+			{
+				if (animComponent)
+				{
+					animComponent->SetIsLooping(true);
+					animComponent->PlayAnim(GameEngine::EAnimationId::PlayerWalkDown);
+				}
+				wantedVel.y += pxPerStep;
+				m_y += pxPerStep;
+				m_numSteps += 1;
+			}
+			if (m_numSteps == maxNumSteps)
+			{
+				m_wasDownPressed = false;
+				m_numSteps = 0;
+				m_board->PlayerUpdate(m_x, m_y);
 			}
 		}
 
-		m_wasFaceSwapButtonPressed = false;
+
+
+		int maxFaces = 4;
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
+		{
+			m_wasFaceSwapButtonPressed = true;
+		}
+		else
+		{
+			//Button is not pressed now, but it was pressed last frame, which means it just has been released
+			if (m_wasFaceSwapButtonPressed)
+			{
+				GameEngine::AnimationComponent* animComponent = GetEntity()->GetComponent<GameEngine::AnimationComponent>();
+				if (animComponent)
+				{
+					animComponent->SetIsLooping(false);
+					animComponent->PlayAnim(GameEngine::EAnimationId::PlayerDance);
+				}
+				/*if (m_x >= 50 * 20 - 25 && m_y >= 50 * 20 - 25) {
+					animComponent->SetIsLooping(false);
+					animComponent->PlayAnim(GameEngine::EAnimationId::PlayerSink);
+				}*/
+			}
+
+			m_wasFaceSwapButtonPressed = false;
+		}
+
 	}
-
-
+	else
+	{
+		animComponent->StopAnim();
+	}
 
 	//Update the entity position with new velocity
 	GetEntity()->SetPos(GetEntity()->GetPos() + wantedVel);

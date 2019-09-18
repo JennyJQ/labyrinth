@@ -178,9 +178,6 @@
     <Image Include="Resources\img\2.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Resources\img\3.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Resources\img\4.png">
       <Filter>Resource Files</Filter>
     </Image>
@@ -206,6 +203,18 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Resources\img\portal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\img\cobblestone.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\img\3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\HackTheNorth\UbiGame_BlankFinished\UbiGame\UbiGame\Resources\img\fog.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\img\fog.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

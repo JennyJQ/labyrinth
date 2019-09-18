@@ -15,7 +15,7 @@ namespace Game
 		GameBoard();
 		virtual ~GameBoard();
 
-
+		bool move = true;
 		void Update();		
 		bool IsGameOver() { return false; }
 		//void UpdateTile();
@@ -25,6 +25,8 @@ namespace Game
 		void CreatePlayer(float xpos, float ypos, float width, float height);
 		void CreateObstacle(float xpos, float ypos, float width, float height);
 		void CreateBackGround();
+		void CreatePortal();
+		void CreateBed();
 		void OpenSpace(const int a, const int b);
 		
 
@@ -34,9 +36,9 @@ namespace Game
 		std::vector<GameEngine::Entity*> m_blocks; //Array for blocks
 		GameEngine::Entity* m_player;
 		GameEngine::Entity* m_backGround;
+		GameEngine::Entity* m_portal;
+		GameEngine::Entity* m_Bed;
 		int** tiles = new int*[20];
-
-		bool m_isGameOver;
 	};
 }
 

@@ -73,6 +73,14 @@ void AnimationManager::InitStaticGameAnimations()
 			32,
 			10)
 	);
+	m_animDefinitions.push_back
+	(
+		SAnimationDefinition(EAnimationId::PlayerSink,
+			eTexture::Portal,
+			sf::Vector2i(0, 0),
+			6,
+			10)
+	);
 }
 
 

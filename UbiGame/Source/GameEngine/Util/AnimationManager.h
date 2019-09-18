@@ -16,6 +16,7 @@ namespace GameEngine
 			PlayerWalkRight,
 			PlayerWalkLeft,
 			PlayerDance,
+			PlayerSink,
 			None,
 		};
 	}
